@@ -7,45 +7,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css"/>
-    <title>Document</title>
+<link href="fontawesome-free-6.0.0-web/css/brands.css" rel="stylesheet"/>
+<link href="fontawesome-free-6.0.0-web/css/solid.css" rel="stylesheet"/>
+<link rel="stylesheet" href="./style.css"/>
+   <title>My form</title>
 </head>
-<body>
-    <div id="container">
-            <form class="container2">
-                <div>
-                <label for="name">Your Name <span class= "red"> *</span></label>
-                <input class="form-group" type="text" name="name" id="name" placeholder="" />
-            </div>
-            
-            <div>
-                <label for="email">Your Email <span class= "red"> *</span></label>
-                <input class = "form-group1" type="email" name="email" id="email" placeholder="" />
-                
-            </div>
-            <div>
-                <label for="password">Activation Token <span class= "red"> *</span></label>
-                <input class = "form-group2" type="password" name="password" id="password" placeholder="" />
-                
-            </div>
-            <div> 
-                <p>You agree to the 
-                <label for="privacy"><span><u>privacy policy </u></span><span class= "red"> *</span></label>
-                <input class type="checkbox" name="privacy" id="privacy" placeholder="" /></p>
-               
-            </div>
-                
-            <!--div>
-                <label for="error"></label>
-                <input class type="text" name="error" id="errorElement" placeholder=""/></p>
-                h4>EMAIL MUST BE FILLED OUT!!!</h4-->
+<body><div id="container">
+    <form  id="form" action="" method = "post">
+        <div>
+            <label for="name">Your Name <span class= "red">  *</span></label>
+            <input class="form-group" type="text" name="name" id="name">
+        </div>
 
-            <div id="screen" class="screen2"></div>
-             <div>   
-                <button type="submit" class="btn">submit</button>
-            </div>
-        </form>
-    </div> 
-<script src = "script.js"></script>      
+        <div>
+            <label for="email"> Your Email <span class= "red">*</span></label>
+            <input class="form-group1" type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="activationToken">Activation Token  <span class= "red"> *</span></label>
+            <input class="form-group2" type="password" name="activationToken" id="activationtoken">
+        </div>
+                <div>
+
+                    <p>You agree to this <span>
+                   <u><label for="privacy policy">privacy policy</u></span><span class= "red">*</span></label> 
+                    <input type="checkbox" name="privacypolicy" id="checker" value="yes"></p><br>
+                      
+                        <div class="error"></div>
+                         <div>
+                             <button class="but" type="submit">Submit</button>
+                           </div>
+                         </div>
+              </div>
+    </form>
+</div>
+<script type="text/javascript"> 
+const form = document.querySelector("#form");
+const name= document.querySelector("#name");
+const email= document.querySelector("#email");
+const activationToken= document.querySelector("#activationtoken");
+const cb=document.querySelector("#checker") 
+form.addEventListener("submit", validateform);
+
+function validateform(e){ 
+    e.preventDefault();
+    let nameval = name.value
+if (nameval === ""){  
+//   alert("Name can't be blank"); 
+  document.querySelector(".error").textContent = "NAME MUST BE FILLED OUT!!!"
+  return;  
+ }
+    let emailval = email.value
+   if(emailval === ""){
+      document.querySelector(".error").textContent = "EMAIL MUST BE FILLED OUT!!!"
+  return;  
+} 
+    let activationtokenval = activationToken.value
+    if(activationtokenval === ""){ 
+    document.querySelector(".error").textContent = "FILL OUT ACTIVATION TOKEN!!!"
+  return;  
+  } 
+  let cbval = cb.value
+if(cb.checked == false){
+    document.querySelector(".error").textContent = "PRIVACY POLICY MUST BE CHECKED!!!"
+}
+onclick="window.open('http://yoururl.com', '_blank');"
+} 
+</script>
 </body>
 </html>

@@ -1,91 +1,91 @@
 body{
-    color: white;
-    width: 100vw;
-    height: 100vh;
     background-image: url("./img.png");
-    background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Courier Prime',monospace;
+    background-size: cover; 
+    color: white;
+    width:100vw;
+    height:100vh;
+    font-family:Courier;
     font-size: 16px;
 }
 #container{
-    align-items: center;
-    width: 90%;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
     height: 50%;
-    padding-left: 20%;
+    font-family:Courier ;
 }
-form {
+form{
+    background-color: #fa5959;
+    width: 50%;
+    /* height: 100%; */
     padding: 50px;
-    width: 55%;
-    background:#fa5959;
-    border-radius: 50px;
+    border-radius: 40px;   
 }
-[type="email"]{
-    border: 7px solid red;
+p{
+    margin: -1% 0% 3% 20%;
 }
+
 .form-group{
     border: white;
-    padding: 12px;
-    width: 470px;
-    height: 20px;
-    margin-top: 28px;
-    margin-left: 23%;
-    border-radius: 3px;
+    margin-left: 27%;
+    width: 300px;
+    height: 30px;
 }
 .form-group1{
-    padding: 12px;
-    padding-bottom: 10px;
-    width: 470px;
-    height: 20px;
-    margin-top: 10px;
-    margin-left: 20%;
-    border-radius:1px;
+    border: white;
+    margin-left: 26%;
+    width: 300px;
+    height: 30px;
 }
 .form-group2{
-    border:white;
-    padding: 12px;
-    width: 470px;
-    height: 20px;
-    margin-top: 10px;
-    margin-left: 13%;
+    border: white;
+    margin-left: 19%;
+    width: 300px;
+    height: 30px;
+}
+input{
+    margin-bottom: 20px;
+    padding-right: 70px;
+    align-items: center;
+}
+
+h4{
+    background-color: white;
+    color: #fa5959;
 }
 span.red{
     color: red;
 }
-span {
+span{
     color: blue;
 }
+
+.but{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
 button{
-    margin-top: 5px;
+    margin: auto;
     height: 40px;
-    width: 100px;
-    background: #fa5959;
-    color:white;
-    border-radius: 5px;
-    border-color: white;
-    padding-top: 1px;
-    margin-left: 45%;
-}
-p{
-    font-size: 16px;
-    height: 50px;
-    margin-top: 2%;
-    margin-left: 22%;
-}
-h4{
-    padding-top: 10px;
-    padding-left: 90px;
-    margin-left: 20%;
-    margin-top: -25px;
-    background-color: white;
-    color:red ;
-    height: 35px;
     width: 300px;
-    align-content: center;
-}
-.screen2{
-    width: 200px;
-    height: 50px;
-    color: red;
+    background-color:#fa5959 ;
+    color: white;
+    border-radius: 6px;
+    border-color: white;
+    padding-top: 10px;
+    padding-left: 2%;
+   }
+
+.error {
+    width: 350px;
+    height: 30px;
     background: white;
+    color: red;
+    margin:-5% 0% 4% 30%;
+    border-color: red 5px solid;
+    padding-left: 5%;
+    padding-top: 2%;
 }
