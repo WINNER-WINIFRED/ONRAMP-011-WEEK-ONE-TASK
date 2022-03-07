@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript">
+    
+    function validate_form ( )
+    {
+        valid = true;
+    
+        if ( document.contact_form.contact_name.value == "" )
+        {
+            alert ( "Please fill in the 'Your Name' box." );
+            valid = false;
+        }
+    
+        return valid;
+    }
+
+    function validate_form ( )
+    {
+        valid = true;
+    
+        if ( document.contact_form.contact_email.value == "" )
+        {
+            alert ( "Please fill in the 'Your Name' box." );
+            valid = false;
+        }
+    
+        return valid;
+    }
+
+    function validate_form ( )
+    {
+        valid = true;
+    
+        if ( document.contact_form.contact_token.value == "" )
+        {
+            alert ( "Please fill in the 'Your Name' box." );
+            valid = false;
+        }
+    
+        return valid;
+    }
+    
+    </script>
+</head>
+<body>
+  <form name="contact_form" method="post"
+  action="/cgi-bin/articles/development/
+    javascript/form-validation-with-javascript/contact_simple.cgi"
+  onsubmit="return validate_form ( );">
+  <h1>Please Enter Your Name</h1>
+
+<p>Your Name: <input type="text" name="contact_name"></p>
+<p>Your email: <input type="text" email="contact_name"></p>
+<p>Your token: <input type="text" token="contact_name"></p>
+<p><input type="submit" name="send" value="Send Details"></p>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body{
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'courier prime', monoscape;
+  font-size: 16px;
+}
+#container{
+    align-items:center;
+    width: 60%;
+    height: 50%;
+    padding-left: 20%;
+}
+
+form{
+    padding: 50px;
+    width: 45%;
+    background:#fa5959;
+    border-radius: 50px;
+    height: 45%;
+    margin-left: 30%;
+    margin-right: 40%;
+}
+[type=]{
+    border: 7px solid red;
+}
+.mma_presh{
+    border: white;
+    padding: 12px;
+    width: 470px; 
+    height: 20px;
+    margin-top: 28px;
+    margin-left: 23%;
+    border-radius: 3px; 
+}
+.mma_presh1{
+    padding: 12px;
+    padding-bottom: 10px;
+    width: 470px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20%;
+    border-radius: 1px;
+}
+.mma_presh2{
+    border: white;
+    padding: 12px;
+    width: 470px;
+    height: 20px;
+    margine-top: 10px;
+    margin-left: 13%;
+}
+span.red{
+    color: red;
+}
+span{
+    color:  blue;
+}
+button{
+    margine-top: 5px;
+    height: 40px;
+    width: 100px;
+    background: #fa5959;
+    colour: white;
+    border-radius: 5px;
+    border-color: white;
+    padding-top: 1px;
+    margine-left: 45%;
+}
+p{
+    font size: 16px;
+    height: 50px; 
+    margin-top: 2% 
+    margin-left: 22%
+}
+h4{
+    padding-top: 10px
+    padding-left: 90px
+    margine-left: 20%
+    margine-top: 25px
+    background-colour: white;
+    colour: red;
+    height: 35px;
+    width: 300px;
+    align-content: center;
+}

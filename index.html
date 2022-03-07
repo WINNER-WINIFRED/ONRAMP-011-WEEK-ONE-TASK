@@ -12,33 +12,40 @@
 </head>
 <body>
     <div id="container">
-        <form>
-            <div>
+            <form class="container2">
+                <div>
                 <label for="name">Your Name <span class= "red"> *</span></label>
-                <input class="form-group" type="text" name="name" id="name" placeholder=""/>
+                <input class="form-group" type="text" name="name" id="name" placeholder="" />
             </div>
+            
             <div>
                 <label for="email">Your Email <span class= "red"> *</span></label>
-                <input class = "form-group1" type="email" name="email" id="email" placeholder=""/>
+                <input class = "form-group1" type="email" name="email" id="email" placeholder="" />
+                
             </div>
             <div>
                 <label for="password">Activation Token <span class= "red"> *</span></label>
-             <input class = "form-group2" type="password" name="password" id="password" placeholder=""/>
+                <input class = "form-group2" type="password" name="password" id="password" placeholder="" />
+                
             </div>
             <div> 
                 <p>You agree to the 
                 <label for="privacy"><span><u>privacy policy </u></span><span class= "red"> *</span></label>
-                <input class type="checkbox" name="privacy" id="privacy" placeholder=""/></p>
+                <input class type="checkbox" name="privacy" id="privacy" placeholder="" /></p>
+               
             </div>
                 
-            <div>
-                <h4>EMAIL MUST BE FILLED OUT!!!</h4>
-            </div>
+            <!--div>
+                <label for="error"></label>
+                <input class type="text" name="error" id="errorElement" placeholder=""/></p>
+                h4>EMAIL MUST BE FILLED OUT!!!</h4-->
 
-            <div class="but">
-                <button type="button">submit</button>
+            <div id="screen" class="screen2"></div>
+             <div>   
+                <button type="submit" class="btn">submit</button>
             </div>
         </form>
-    </div>    
+    </div> 
+<script src = "script.js"></script>      
 </body>
 </html>
